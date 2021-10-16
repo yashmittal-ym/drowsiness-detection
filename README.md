@@ -11,10 +11,6 @@ This web-app is a one-page application for making it convenient and accessible t
 ![image](https://user-images.githubusercontent.com/49195734/134024675-2eb7268e-94fc-492a-92f3-9d6bec1a531a.png)
 
 
-## Output Snapshots:
-<img src = "https://user-images.githubusercontent.com/49195734/134022820-9ac5e5b8-ee5e-401c-b939-74bbd258161e.png" width = "350"><img src = "https://user-images.githubusercontent.com/49195734/134022963-2c86542f-7132-423e-bbbc-fff9f2548d83.png" width = "325"><img src = "https://user-images.githubusercontent.com/49195734/134023183-7257e83f-2ccd-433f-8b41-48c8aa330755.png" width = "325">
-
-
 ## Working Details: 
 
 The basic thing about drowsiness detection is pretty simple. We first detect a face using dlib's frontal face detector. Once the face is detected , we try to detect the facial landmarks in the face using the dlib's landmark predictor. The landmark predictor returns 68 (x, y) coordinates representing different regions of the face, namely - mouth, left eyebrow, right eyebrow, right eye, left eye, nose and jaw. Ofcourse, we don't need all the landmarks, here we need to extract only the eye and the mouth region. 
